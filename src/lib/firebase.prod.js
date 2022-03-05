@@ -3,7 +3,7 @@ import "firebase/compat/firestore"
 import "firebase/compat/auth" 
 
 const config = {
-    apikey: '',
+    apiKey: null
 }
 
 const firebase = Firebase.initializeApp(config)
