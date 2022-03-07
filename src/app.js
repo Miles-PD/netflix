@@ -4,12 +4,14 @@ import {Switch} from "react-router"
 import { Home, Browse, SignIn, SignUp } from "./pages"
 import * as ROUTES from "./constants/routes"
 import { IsUserRedirect, ProtectedRoute} from "./helpers/routes"
+import { useAuthListener } from "./hooks"
 
 
 
 export default function App() {
 
-  const user = null
+  const { user } = useAuthListener()
+  console.log(user)
 
   return (
     <Router>
