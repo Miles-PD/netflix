@@ -1,5 +1,5 @@
 import React from "react";
-import BrowserContainer from "../containers/browse";
+import {BrowserContainer} from "../containers/browse";
 import { useContent } from "../hooks";
 import selectionFilter from "../utils/selection-filter";
 
